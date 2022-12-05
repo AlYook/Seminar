@@ -13,6 +13,6 @@ while (temp<=num)
 {
     pow = Math.Pow(temp, 2);
     Console.Write(pow);
-    Console.Write(,);
+    Console.Write(",");
     temp++;
 }
