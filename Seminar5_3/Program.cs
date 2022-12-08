@@ -6,3 +6,23 @@
 // [5, 18, 123, 6, 2] -> 1
 // [1, 2, 3, 6, 2] -> 0
 // [10, 11, 12, 13, 14] -> 5
+
+int count = 0;
+int[] array = new int[5];
+int i = 0;
+
+for (; i < 5; i++)
+{
+    array[i] = new Random().Next(1, 1000);
+    
+}
+Console.WriteLine(string.Join(", ", array));
+
+foreach (int el in array)
+{
+    if (el >= 10 && el < 100)
+    {
+        count++;
+    }
+}
+Console.WriteLine(count);
